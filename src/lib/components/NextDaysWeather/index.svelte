@@ -1,10 +1,14 @@
 <script>
 	// @ts-nocheck
-
+	import { onMount } from 'svelte';
 	import WeatherIcon from './WeatherIcon.svelte';
 	import { nextDaysWeather } from '../../stores/currentWeather/weather.state';
 	import { useQuery } from '@sveltestack/svelte-query';
-	const queryResult = useQuery('weatherData');
+	const queryResult = useQuery('weatherData', {
+		refetchOnWindowFocus: false,
+		refetchOnMount: false,
+		keepPreviousData: true
+	});
 	const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 </script>
 

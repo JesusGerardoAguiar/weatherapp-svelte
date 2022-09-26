@@ -5,7 +5,9 @@
 	import { fetchWeather } from '../../stores/currentWeather/actions';
 	import { useQuery } from '@sveltestack/svelte-query';
 	import { currentWeather, nextDaysWeather } from '../../stores/currentWeather/weather.state';
-	const queryResult = useQuery('weatherData', fetchWeather);
+	const queryResult = useQuery('weatherData', fetchWeather, {
+		refetchOnWindowFocus: false,
+	});
 </script>
 
 {#if $queryResult.isLoading}
