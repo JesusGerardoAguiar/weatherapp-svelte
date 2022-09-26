@@ -196,6 +196,11 @@
     magic-string "^0.26.3"
     svelte-hmr "^0.15.0"
 
+"@sveltestack/svelte-query@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@sveltestack/svelte-query/-/svelte-query-1.6.0.tgz#d175863557a7abe6a8dcb0da2080a9f43ae8d1d1"
+  integrity sha512-C0wWuh6av1zu3Pzwrg6EQmX3BhDZQ4gMAdYu6Tfv4bjbEZTB00uEDz52z92IZdONh+iUKuyo0xRZ2e16k2Xifg==
+
 "@types/cookie@^0.5.1":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.5.1.tgz#b29aa1f91a59f35e29ff8f7cb24faf1a3a750554"

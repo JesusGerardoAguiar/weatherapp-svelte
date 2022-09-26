@@ -6,5 +6,3 @@ export const currentWeather = writable({
 });
 export const nextDaysWeather = writable([]);
 
-export const weatherLoading = writable(false);
-export const weatherError = writable(null);
