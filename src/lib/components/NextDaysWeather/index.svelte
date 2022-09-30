@@ -25,7 +25,7 @@
 			<div class="flex flex-row justify-between items-center border-b h-[3rem]">
 				<p class="w-[100%]">{days[new Date(weatherDays.datetime).getDay()]}</p>
 				<WeatherIcon icon={weatherDays.icon} />
-				<p class="w-[100%] text-end">{weatherDays.feelslikemin}-{weatherDays.feelslikemax}</p>
+				<p class="w-[100%] text-end">{Math.round(parseFloat(weatherDays.feelslikemin))}℃-{Math.round(parseFloat(weatherDays.feelslikemax))}℃</p>
 			</div>
 		{/each}
 	</div>
